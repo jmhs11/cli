@@ -1,0 +1,32 @@
+{
+  "name": "@jmhs11/kurocli",
+  "version": "1.0.0",
+  "description": "CLI to bootstrap projects",
+  "main": "index.js",
+  "bin": {
+    "@jmhs11/kurocli": "bin/kurocli",
+    "kurocli": "bin/kurocli"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "bin/",
+    "src/",
+    "templates/"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "arg": "^5.0.1",
+    "chalk": "^4.1.2",
+    "esm": "^3.2.25",
+    "execa": "^5.1.1",
+    "inquirer": "^8.2.0",
+    "listr": "^0.14.3",
+    "ncp": "^2.0.0",
+    "os": "^0.1.2",
+    "pkg-install": "^1.0.0"
+  }
+}
