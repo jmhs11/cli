@@ -19,15 +19,7 @@ function parseArgumentsIntoOptions(rawArgs) {
       argv: rawArgs.slice(2),
     }
   );
-  console.log('Argumentos ' + args._);
-  console.log({
-    skipPrompt: args['--yes'] || false,
-    git: args['--git'] || false,
-    template: args._[0],
-    dir: args['--dir'] || process.cwd(),
-    runInstall: args['--install'] || false,
-  });
-  // process.exit(0);
+
   return {
     skipPrompt: args['--yes'] || false,
     git: args['--git'] || false,
@@ -49,8 +41,6 @@ async function promptForMissingOptions(options) {
       template: options.template || defaultTemplate,
     };
   }
-
-  console.log(options);
 
   const questions = [];
   if (!options.template) {
