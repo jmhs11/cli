@@ -7,9 +7,14 @@
     "dev": "webpack serve --open --config=webpack.dev.js",
     "build": "webpack --config=webpack.prod.js"
   },
-  "author": "",
-  "license": "",
-  "keywords": [],
+  "author": "Jose Maria Herrero <josemariahs@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "Webpack",
+    "Javascript",
+    "Starter",
+    "Bootstrap"
+  ],
   "devDependencies": {
     "@babel/core": "^7.15.8",
     "@babel/preset-env": "^7.15.8",
